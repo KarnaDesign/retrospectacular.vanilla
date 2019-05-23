@@ -1,0 +1,60 @@
+<DOCTYPE html>
+
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>Retrospectacular</h1>
+                <h3>Vanilla</h3>
+            </header>
+            <div class="editor">
+                <textarea id="cardText" placeholder="Pour your little heart out..."></textarea>
+                <div class="colorButtons">
+                    <button id="bad" class="selected"></button>
+                    <button id="good"></button>
+                    <button id="improvement"></button>
+                    <button id="unexpected"></button>
+                </div>
+                <button id="addColorButton">Add card</button>
+            </div>
+            <div class="board">
+                <div class="row">
+                    <div class="bad">
+                        <h2>Bad stuff</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <p>This is a test card</p>
+                            </div>
+                            <div class="card">
+                                <p>This is another test card</p>
+                                <p>With some stuffs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="good">
+                        <h2>Good stuff</h2>
+                        <div class="cards"></div>
+                    </div>
+                    <div class="improvement">
+                        <h2>Improvement</h2>
+                        <div class="cards"></div>
+                    </div>
+                    <div class="unexpected">
+                        <h2>Unexpected</h2>
+                        <div class="cards"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+    </html>
