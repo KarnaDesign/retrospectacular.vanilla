@@ -18,6 +18,11 @@ function addCard() {
     deleteButton.classList.add("delete");
     deleteButton.innerText = "x";
     deleteButton.setAttribute("title", "Remove this card");
+    deleteButton.addEventListener("click", (e) => {
+        var cardToDelete = e.target.parentNode;
+        var cards = cardToDelete.parentNode;
+        cards.removeChild(cardToDelete);
+    })
     var paragraph = document.createElement("p");
     paragraph.innerText = text;
     var card = document.createElement("div");
