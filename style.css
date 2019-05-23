@@ -140,11 +140,24 @@ textarea::placeholder {
     width: 12rem;
     color: #ffffff;
     box-shadow: 10px 5px 5px grey;
+    position: relative;
+}
+
+.card .delete {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.card .delete:hover {
+    transform: rotate(90deg);
 }
 
 .board .row .bad .cards .card {
     background-color: red;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
     margin-bottom: 1rem;
 }
 
@@ -155,13 +168,13 @@ textarea::placeholder {
 }
 
 .board .row .improvement .cards .card {
-    background-color: blue;
+    background-color: greenyellow;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
 .board .row .unexpected .cards .card {
-    background-color: blue;
+    background-color: pink;
     padding: 1rem;
     margin-bottom: 1rem;
 }

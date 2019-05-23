@@ -14,9 +14,14 @@ function bindColorButtons() {
 function addCard() {
     var text = document.getElementById("cardText").value;
     var cardType = document.querySelector(".colorButtons > .selected").id;
+    var deleteButton = document.createElement("p");
+    deleteButton.classList.add("delete");
+    deleteButton.innerText = "x";
+    deleteButton.setAttribute("title", "Remove this card");
     var paragraph = document.createElement("p");
-    paragraph.innerHTML = text;
+    paragraph.innerText = text;
     var card = document.createElement("div");
+    card.appendChild(deleteButton);
     card.appendChild(paragraph);
     card.classList.add("card");
     var columnSelector = "." + cardType + " .cards";
